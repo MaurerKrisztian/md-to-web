@@ -14,7 +14,7 @@ jobs:
     # Any prerequisite steps
     - uses: actions/checkout@master
     - run: git clone https://github.com/batunpc/palpatine
-    - run: cd palpatine && mkdir build && cd build && cmake .. && make && cd ./app && ./palpatine -o web -i ./website
+    - run: cd palpatine && mkdir build && cd build && cmake .. && make && cd ./app && mkdir web/dist ./palpatine -o web -i ../../../
     # Deploy to local repo
     - name: Deploy
       uses: s0/git-publish-subdir-action@develop
