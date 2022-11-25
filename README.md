@@ -2,7 +2,7 @@
 
 Turn md files to website with [palpatine](https://github.com/batunpc/palpatine) and github workflows
 
-in this example I will convert the "files" folder md/txt files to a website and push it to gh-pages branch what is hosted with github pages https://maurerkrisztian.github.io/md-to-web/
+This example workflow (on push event) will convert the "files" folder md/txt files to a website and push it to gh-pages branch what is hosted with github pages https://maurerkrisztian.github.io/md-to-web/
 
 ```yml
 name: md-to-website
